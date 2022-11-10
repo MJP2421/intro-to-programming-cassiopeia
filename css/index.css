@@ -92,6 +92,16 @@ button{
     outline-style: solid;
     margin-left:4px;
 }
+nav ul li{
+    list-style-type: none;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: rgb(132, 150, 140);
+    margin-right: 200px;
+    
+    }
+
+
 @media screen and (min-width: 480px) and (max-width:1200px) {
     body{
         background:rgb(255, 255, 255)    
@@ -117,9 +127,7 @@ button{
     }
 
 }
-    nav ul li{
-        list-style-type: none;
-        border-radius: 0px;
-        display: inline-block;
-    }
+
+
+
    
