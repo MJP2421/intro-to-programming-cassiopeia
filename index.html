@@ -1,16 +1,27 @@
-
 <!DOCTYPE html>
-<html>
+<html lang=“en”>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link  rel="stylesheet"
+        href="css/index.css">
 </head>
 <body>
-    <section>
-        <h1>About</h1>
-        <p>    My name is Melanie Garcia, I am 18 years old, and I was born in Mexico. I am very pattionate about math, engineering and programming. I enjoy challenging myself and learning new things. I am currently a freshman in college, where I will persuing a cereer in electrical engineering and computer engineer, I have awlays known I wnanted to be an engineer since I have 12 years old. My goal is to be the first of my generation to attend college and graduate as an electrical and computer engineer. 
+    <nav>
+         <ul>
+            <li> <a href= "#about"> About</a></li>
+            <li> <a href= "#experience"> Experience</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h1>About me</h1>
+        
+        <p>My name is Melanie Garcia, I am 18 years old, and I was born in Mexico. I am very passionate about math, engineering, and programming. I enjoy challenging myself and learning new things. I am currently a freshman in college, where I will pursue a career in electrical engineering and computer engineering, I have always known I wanted to be an engineer since I have 12 years old. My goal is to be the first of my generation to attend college and graduate as an electrical and computer engineer.
         </p>
     </section>
-    <section>
+    <section id="experience">
         <h1>Experience</h1>
         <ul>
             <li> One project I have worked on is an air taxi.</li>
@@ -24,30 +35,32 @@
             
         </ul>
     </section>
-    <section>
+    <section id="connect">
         <h1>Connect</h1>
         <ul> 
-            <li>https://github.com/MJP2421/intro-to-programming-cassiopeia/tree/main</li>
+            <li><a href= "https://github.com/MJP2421/intro-to-programming-cassiopeia/tree/main"> MGP</a></li>
             <li>garciapatriciomelanie89@gmail.com</li> 
         </ul>
     </section>
     
-    <section>
+    <section id="leave a message">
         <h2>Leave a Message</h2>
+       
     </section>
     
-    <form action="" method="" name="leave_message">
-        <label for="name">Name</label><br>
-         <input type="text" id="name" name="name" required><br>
-         
-         <label for="email">Email Adress</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message"></textarea><br>
-        <button >Submit</button>
-        
-    </form>
+    <form action="" method="" name="leave_message" class="flexbox"> 
+        <div class="boxmargin">
+            <label for="name">Name</label><br>
+             <input type="text" id="name" name="name" required><br>
+            <label for="email">Email Adress</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button >Submit</button>
+        </div>
+     </form>
+     
 
     <section id="messages">
         <h1>Messages</h1>
