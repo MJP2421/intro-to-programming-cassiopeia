@@ -44,4 +44,3 @@ messageList.appendChild(newMessage);
 messageForm.reset()
 
 })
-
