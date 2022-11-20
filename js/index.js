@@ -44,4 +44,30 @@ messageList.appendChild(newMessage);
 messageForm.reset()
 
 })
+let repositories
+// const githubRequest = new XMLHttpRequest();
+// githubRequest.open('GET','https://api.github.com/users/MJP2421/repos');
+// githubRequest.send();
+// githubRequest.addEventListener('load')
 
+fetch('https://api.github.com/users/MJP2421/repos')
+.then((response) => response.json())
+.then((repositories)=> {
+    // repositories = JSON.parse(githubRequest.response)
+    console.log(repositories)
+    
+    const projectSection = document.querySelector("#projects");
+    const projectList = projectSection.querySelector("ul");
+    for (let i = 0; i < repositories.length; i++ ) {
+    const project = document.createElement('li');
+    
+    const link = document.createElement('a');
+    link.setAttribute("href", repositories[i].html_url);
+    link.innerText = repositories[i].name;
+    project.appendChild(link)
+    projectList.appendChild(project); 
+}
+    
+    
+    }) .catch(console.error)
+   
